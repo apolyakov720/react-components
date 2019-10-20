@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 interface Alert {
   message: string;
   type: 'default' | 'success' | 'info' | 'warning' | 'danger';
 }
 
-const Alert: React.FunctionComponent<Alert> = ({ message, type = 'default' }) => {
+const Alert: FunctionComponent<Alert> = ({ message, type = 'default' }): JSX.Element => {
   return <div className={`alert alert--${type}`}>{message}</div>;
 };
 

@@ -1,0 +1,8 @@
+/* Вспомогательные классы. То место где можно использовать аннотацию !important */
+
+.input-no-visible
+  &:not(:checked)
+  &:checked
+    position absolute
+    opacity 0
+    pointer-events none

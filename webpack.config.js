@@ -5,7 +5,10 @@ module.exports = {
   //т.к. используем конфигурацию storybook
 
   resolve: {
-    extensions: [' ', '.js', '.jsx', '.ts', '.tsx', '.styl']
+    extensions: [' ', '.js', '.jsx', '.ts', '.tsx', '.styl'],
+    alias: {
+      assets: path.resolve(__dirname, 'src/assets')
+    }
   },
 
   module: {
@@ -25,6 +28,17 @@ module.exports = {
       {
         test: /\.styl$/,
         use: ['style-loader', 'css-loader', 'stylus-loader']
+      },
+      {
+        test: /\.(otf|ttf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[hash:8].[ext]'
+            }
+          }
+        ]
       }
     ]
   }
