@@ -5,7 +5,7 @@ module.exports = {
   //т.к. используем конфигурацию storybook
 
   resolve: {
-    extensions: [' ', '.js', '.jsx', '.styl']
+    extensions: [' ', '.js', '.jsx', '.ts', '.tsx', '.styl']
   },
 
   module: {
@@ -15,7 +15,8 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /\.tsx?$/
+        test: /\.tsx?$/,
+        use: ['ts-loader']
       },
       {
         test: /\.css$/,

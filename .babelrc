@@ -1,7 +1,4 @@
 {
-    "presets": [
-        "@babel/react",
-        "@babel/env"
-    ]
+  "presets": ["@babel/react", "@babel/preset-typescript", "@babel/env"]
 }
 //Посмотреть runtime plugin

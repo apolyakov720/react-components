@@ -1,0 +1,23 @@
+{
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "esnext",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "es5",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "src",
+    "rootDirs": ["src", "stories"],
+    "allowJs": false,
+    "noErrorTruncation": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "strictNullChecks": true
+  }
+}
