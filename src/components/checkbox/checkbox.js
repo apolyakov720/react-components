@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../../css-modules/checkbox';
-
 const Checkbox = () => {
   return (
     <div className='checkbox'>
