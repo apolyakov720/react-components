@@ -1,0 +1,29 @@
+.switcher
+  font-size 1rem
+  display inline-flex
+  align-items center
+  cursor pointer
+  transition border-color .2s, background .2s
+
+  &__input
+    display inline-flex
+    width $size-normal
+    height $size-normal
+    border .07em solid $botticelli
+    position relative
+    flex-shrink 0
+    transition border-color .2s, background .2s
+
+    ~/ input:focus + &
+    ~/:hover &
+      border-color $royal-blue
+
+    ~/ input:checked + &
+      border-color $blue-violet
+
+  &__caption
+    margin-left .5em
+
+    ~/ input:focus ~ &
+    ~/:hover &
+      color $royal-blue
