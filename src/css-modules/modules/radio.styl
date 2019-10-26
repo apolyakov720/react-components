@@ -3,17 +3,18 @@
 
   &__input
     border-radius 50%
+    align-items center
+    justify-content center
 
     &::before
       content ''
-      position absolute
-      top 0
-      right 0
-      bottom 0
-      left 0
+      min-height $size-normal
+      min-width @min-height
       background transparent
       border-radius inherit
       transform scale(.7)
-    
+      max-height $size-normal
+      max-width @max-height
+
     ~/ input:checked + &::before
       background $blue-violet
