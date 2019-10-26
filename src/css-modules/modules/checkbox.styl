@@ -1,8 +1,21 @@
 .checkbox
-  font-size 1rem
+  @extend .switcher
 
   &__input
-    display inline-block
-    width $size-normal
-    height $size-normal
-    border .07em solid $botticelli
+    border-radius .1em
+
+    ~/ input:checked + &
+      background $blue-violet
+
+    &::before
+      content ''
+      width 50%
+      height 90%
+      border .15em solid $white
+      position absolute
+      top 50%
+      left 50%
+      transform-origin right center
+      transform translate(-60%, -43%) rotate(38deg)
+      border-left none
+      border-top none

@@ -1,0 +1,44 @@
+.toggle
+  font-size $size-root-component
+  display inline-flex
+  align-items center
+  cursor pointer
+
+  &__input
+    display inline-block
+    height $size-normal
+    width $w = @height * 3
+    background $regent-gray
+    border-radius .6em / .55em
+    box-shadow inset 0 -1px 5px lightness($default, 40%)
+    position relative
+    flex-shrink 0
+    transition background .25s
+
+    &::before
+      content ''
+      position absolute
+      top 0
+      left 0
+      height $size-normal
+      width @height
+      background $white
+      border-radius 50%
+      transform scale(.8)
+      box-shadow 0 2px 5px $default
+      transition left .25s
+
+    ~/ input:checked + &
+      background $jade
+
+      &:hover
+        background $malachite
+
+      &::before
+        left $w - $size-normal
+
+    &:hover
+      background $mine-shaft
+
+  &__caption
+    margin-left .5em

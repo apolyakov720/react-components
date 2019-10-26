@@ -6,5 +6,7 @@ import Checkbox from '../../src/components/checkbox';
 //storyOf API
 
 export default (module) => {
-  storiesOf('Checkbox', module).add('default', () => <Checkbox caption='Checkbox' />);
+  storiesOf('Checkbox', module)
+    .add('default', () => <Checkbox />)
+    .add('with caption', () => <Checkbox caption='Normal Checkbox' />);
 };
