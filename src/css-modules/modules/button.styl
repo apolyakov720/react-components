@@ -1,0 +1,59 @@
+.button
+  font-size $size-root-component
+  color $default
+  border 1px solid currentColor
+  border-radius .15em
+  outline none
+  background transparent
+  padding .25em .5em
+  display inline-flex
+  cursor pointer
+  transition color .2s, background .2s, border-color .2s
+
+  &--default
+    background $white
+    border-color $botticelli
+
+    &:hover
+      color $blue-violet
+      border-color $heather-light
+      background $gallery
+
+  &--secondary
+    color $white
+    background $jade
+    border-color $jade
+
+    &:hover
+      background $malachite
+      border-color $malachite
+
+  &--primary
+    color $white
+    background $royal-blue
+    border-color $royal-blue
+
+    &:hover
+      background $blue-violet
+      border-color $blue-violet
+
+  &__name
+    font-size .6em
+
+  &--small
+    small()
+
+  &--normal
+    normal()
+
+  &--medium
+    medium()
+
+  &--large
+    large()
+
+  &--massive
+    massive()
+
+  min-width 20px
+  min-height 20px
