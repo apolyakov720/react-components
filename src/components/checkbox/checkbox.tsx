@@ -1,10 +1,8 @@
 import React, { FunctionComponent, HTMLAttributes } from 'react';
 
-interface Checkbox {
-  caption?: string;
-}
+import { Switcher } from '../../types/common';
 
-const Checkbox: FunctionComponent<Checkbox> & HTMLAttributes<HTMLInputElement> = ({
+const Checkbox: FunctionComponent<Switcher> & HTMLAttributes<HTMLInputElement> = ({
   caption,
   ...inputProps
 }): JSX.Element => {

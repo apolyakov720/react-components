@@ -1,10 +1,8 @@
 import React, { FunctionComponent, HTMLAttributes } from 'react';
 
-interface Toggle {
-  caption?: string;
-}
+import { Switcher } from '../../types/common';
 
-const Toggle: FunctionComponent<Toggle> & HTMLAttributes<HTMLInputElement> = ({
+const Toggle: FunctionComponent<Switcher> & HTMLAttributes<HTMLInputElement> = ({
   caption,
   ...inputProps
 }): JSX.Element => {

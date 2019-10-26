@@ -1,10 +1,8 @@
 import React, { FunctionComponent, HTMLAttributes } from 'react';
 
-interface Radio {
-  caption?: string;
-}
+import { Switcher } from '../../types/common';
 
-const Radio: FunctionComponent<Radio> & HTMLAttributes<HTMLInputElement> = ({
+const Radio: FunctionComponent<Switcher> & HTMLAttributes<HTMLInputElement> = ({
   caption,
   ...inputProps
 }): JSX.Element => {
