@@ -1,0 +1,11 @@
+/*Миксины которые отвечают за размеры элемента.
+  Что-то похожее на вспомогательные классы.*/
+
+setSizeOnPropertyByCurrent(size = 'normal', property = 'font-size')
+  {property} @font-size * $sizeable[size] !important
+
+setRootFontSize()
+  font-size 1rem * $sizeable.root
+
+setTintForColor(color)
+  tint(color, $ratio.tint)

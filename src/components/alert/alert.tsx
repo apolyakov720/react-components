@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 
 interface Alert {
   message: string;
-  type: 'default' | 'success' | 'info' | 'warning' | 'danger';
+  type: 'default' | 'success' | 'information' | 'warning' | 'danger';
 }
 
 const Alert: FunctionComponent<Alert> = ({ message, type = 'default' }): JSX.Element => {

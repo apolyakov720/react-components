@@ -1,9 +1,11 @@
-@import './helpers/normalize'
+/* Порядок загрузки важен */
 @import './helpers/variables'
-@import './helpers/fonts'
+@import './helpers/mixins'
+@import './base/normalize'
+@import './base/global'
+@import './base/typography'
 @import './helpers/classes'
 @import './helpers/extends'
-@import './mixins/sizeable'
 
 /* Использовать маску для файлов */
 @import './modules/*'
