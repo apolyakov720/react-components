@@ -1,5 +1,5 @@
 .switcher
-  font-size $size-root-component
+  setRootFontSize()
   display inline-flex
   align-items center
   cursor pointer
@@ -7,23 +7,23 @@
 
   &__input
     display inline-flex
-    width $size-normal
-    height $size-normal
-    border .07em solid $botticelli
+    width $sizeable.detail
+    height @width
+    border .07em solid $recBorder
     position relative
     flex-shrink 0
     transition border-color .2s, background .2s
 
     ~/ input:focus + &
     ~/:hover &
-      border-color $royal-blue
+      border-color $recPrimary
 
     ~/ input:checked + &
-      border-color $blue-violet
+      border-color $recPrimaryDark
 
   &__caption
     margin-left .5em
 
     ~/ input:focus ~ &
     ~/:hover &
-      color $royal-blue
+      color $recPrimary

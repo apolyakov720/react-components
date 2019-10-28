@@ -3,29 +3,31 @@
 //Возможно здесь можно использовать хеш таблицы для лучшей модульности
 
 /* Палитра цветов */
-$malachite = #0dbf66
-$jade = #00bf79
-$clear-day = #e7fff7
-$royal-blue = #4c6fF5
-$blue-violet = #4852b8
-$lily-white = #e6faff
-$lightning-yellow = #fcc419
-$fair-pink = #ffeee6
-$burnt-sienna = #ed5556
-$lavender-blush = #ffe7ed
-$mine-shaft = #475259
-$regent-gray = #8595a6
-$heather = #adbdcc
-$heather-light = #bfccd9
-$gallery = #f5f7fb
-$botticelli = #cfdae6
-$white = #ffffff
+$color = {
+  royalBlue: #5c67e6,
+  blueViolet: #4952b8,
+  caribbeanGreen: #00e09b,
+  jade: #00bf79,
+  white: #ffffff,
+  catskillWhite: #f5f7fa,
+  botticelli: #cfdae6,
+  heatherLight: #bfccd9,
+  heather: #adbdcc,
+  regentGray: #8595a6,
+  mineShaft: #475259,
+  shark: #1e2225,
+  malachite: #0dbf66
+  cornflowerBlue: #4c6ef5,
+  lightningYellow: #fcc419,
+  burntSienna: #ed5556
+}
 
 /* Размеры */
-$size-normal = 1em//20px
-$size-root-component = 2rem
+$divideSizeable = {}
 
-$size = {
+$sizeable = {
+  root: 2,
+  detail: 1em,
   small: .8,
   normal: 1,
   medium: 1.2,
@@ -33,13 +35,25 @@ $size = {
   massive: 1.6
 }
 
+/* Различные показатели */
+$ratio = {
+  tint: 70%
+}
+
 /* Функциональные переменные */
-$default = $mine-shaft
-$success = $malachite
-$success-light = $clear-day
-$info = $royal-blue
-$info-light = $lily-white
-$warning = $lightning-yellow
-$warning-light = $fair-pink
-$danger = $burnt-sienna
-$danger-light = $lavender-blush
+$recPrimary = $color.royalBlue
+$recPrimaryDark = $color.blueViolet
+$recSecondary = $color.caribbeanGreen
+$recSecondaryDark = $color.jade
+$recLightBackground = $color.white
+$recBackground = $color.catskillWhite
+$recBorder = $color.botticelli
+$recDarkBorder = $color.heatherLight
+$recPlaceholder = $color.heather
+$recBodyText = $color.regentGray
+$recHeader = $color.mineShaft
+$recDarkBackground = $color.shark
+$recSuccess = $color.malachite
+$recInformation = $color.cornflowerBlue
+$recWarning = $color.lightningYellow
+$recDanger = $color.burntSienna

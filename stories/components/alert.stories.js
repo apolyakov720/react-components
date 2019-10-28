@@ -6,10 +6,10 @@ import Alert from '../../src/components/alert';
 export default (module) => {
   storiesOf('Alerts', module)
     .add('default', () => <Alert message='Default alert message.' />)
-    .add('info', () => (
+    .add('information', () => (
       <Alert
         message='Heads up! This alert needs your attention, but its not super important.'
-        type='info'
+        type='information'
       />
     ))
     .add('success', () => (

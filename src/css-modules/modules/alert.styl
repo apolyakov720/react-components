@@ -1,23 +1,23 @@
 .alert
-  font-size 1rem
+  setRootFontSize()
   padding 1em
-  color $default
+  color $recHeader
   font-weight 600
   border-radius .3em
-  background $gallery
+  background $recBackground
 
   &--success
-    color $success
-    background $success-light
+    color $recSuccess
+    background setTintForColor($recSuccess)
 
-  &--info
-    color $info
-    background $info-light
+  &--information
+    color $recInformation
+    background setTintForColor($recInformation)
 
   &--warning
-    color $warning
-    background $warning-light
+    color $recWarning
+    background setTintForColor($recWarning)
 
   &--danger
-    color $danger
-    background $danger-light
+    color $recDanger
+    background setTintForColor($recDanger)

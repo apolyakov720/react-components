@@ -1,6 +1,6 @@
 .button
-  font-size $size-root-component
-  color $default
+  setRootFontSize()
+  color $recHeader
   border 1px solid currentColor
   border-radius .15em
   outline none
@@ -11,49 +11,49 @@
   transition color .2s, background .2s, border-color .2s
 
   &--default
-    background $white
-    border-color $botticelli
+    background $recLightBackground
+    border-color $recBorder
 
     &:hover
-      color $blue-violet
-      border-color $heather-light
-      background $gallery
+      color $recPrimaryDark
+      border-color $recDarkBorder
+      background $recBackground
 
   &--secondary
-    color $white
-    background $jade
-    border-color $jade
+    color $recLightBackground
+    background $recSecondaryDark
+    border-color $recSecondaryDark
 
     &:hover
-      background $malachite
-      border-color $malachite
+      background $recSuccess
+      border-color $recSuccess
 
   &--primary
-    color $white
-    background $royal-blue
-    border-color $royal-blue
+    color $recLightBackground
+    background $recPrimary
+    border-color $recPrimary
 
     &:hover
-      background $blue-violet
-      border-color $blue-violet
+      background $recPrimaryDark
+      border-color $recPrimaryDark
 
   &__name
     font-size .6em
 
   &--small
-    small()
+    setSizeOnPropertyByCurrent('small')
 
   &--normal
-    normal()
+    setSizeOnPropertyByCurrent('normal')
 
   &--medium
-    medium()
+    setSizeOnPropertyByCurrent('medium')
 
   &--large
-    large()
+    setSizeOnPropertyByCurrent('large')
 
   &--massive
-    massive()
+    setSizeOnPropertyByCurrent('massive')
 
   min-width 20px
   min-height 20px
