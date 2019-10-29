@@ -1,0 +1,28 @@
+.overlay
+  setRootFontSize()
+  display inline-block
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  background setRgbaForColor($recDarkBackground)
+  box-shadow 0 0 50vmax @background
+  vertical-align middle
+  white-space nowrap
+  text-align center
+  overflow auto
+  padding .4em
+
+  &::before
+    content ''
+    display inline-block
+    height 100%
+    vertical-align middle
+
+  &__lightbox
+    display inline-block
+    background #fff
+    white-space normal
+    text-align left
+    border-radius .25em
